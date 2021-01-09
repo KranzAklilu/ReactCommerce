@@ -1,0 +1,6 @@
+body {
+  overflow-x: hidden;
+}
+:root {
+  --swiper-theme-color: #c87065;
+}
