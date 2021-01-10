@@ -58,10 +58,13 @@ const SecionTitle: React.FC<Props> = ({ title }) => {
   const classesForSinglePageTitle = useStylesForSinglePageDetails();
   const classesForSectionTitle = useStylesForSectionTitle();
 
-  const classes =
-    pathname[1] === "products"
-      ? classesForSinglePageTitle
-      : classesForSectionTitle;
+  const accentStyleLocation = ["products", "cart"];
+
+  const classes = accentStyleLocation.find(
+    (location) => pathname[1] === location
+  )
+    ? classesForSinglePageTitle
+    : classesForSectionTitle;
 
   return (
     <Box className={classes.root}>

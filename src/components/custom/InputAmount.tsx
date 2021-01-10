@@ -69,7 +69,7 @@ const InputAmount = () => {
       return;
     }
     if (value < 0) {
-      setError("Number Cannot Be Negative");
+      setError("Cannot Be Negative");
       return;
     }
     setError("");
@@ -84,7 +84,7 @@ const InputAmount = () => {
       : setAmount((amount) => amount - 1);
     setError("");
     if (amount < 0) {
-      setError("Number Cannot Be Negative");
+      setError("Cannot Be Negative");
     }
   };
 

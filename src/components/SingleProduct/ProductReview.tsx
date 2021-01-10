@@ -165,7 +165,7 @@ const ProductReview = () => {
           className={classes.textArea}
           rowsMin={7}
           rowsMax={15}
-          aria-label="maximum height"
+          aria-label="review"
           placeholder="Your review here.."
         />
         <Button className={classes.submitButton}>Submit</Button>
