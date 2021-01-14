@@ -12,9 +12,11 @@ import {
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
+      // overflowY: "hidden",
       width: "90%",
       margin: "auto",
       backgroundColor: theme.palette.grey[300],
+      gridColumn: "1 / 5",
       display: "grid",
       gridTemplateColumns: "2fr repeat(3, 1fr) 0.5fr",
       textTransform: "uppercase",
@@ -48,19 +50,19 @@ const SectionBar: React.FC<Props> = ({ item3, item4 }) => {
 
   return (
     <List className={classes.root}>
-      <ListItem>
+      <ListItem style={{ minWidth: 300 }}>
         <Typography className={classes.typography}>products</Typography>
       </ListItem>
-      <ListItem>
+      <ListItem style={{ minWidth: 75 }}>
         <Typography className={classes.typography}>price</Typography>
       </ListItem>
-      <ListItem>
+      <ListItem style={{ minWidth: 150 }}>
         <Typography className={classes.typography}>{item3}</Typography>
       </ListItem>
-      <ListItem>
+      <ListItem style={{ minWidth: 75 }}>
         <Typography className={classes.typography}>{item4}</Typography>
       </ListItem>
-      <ListItem>
+      <ListItem style={{ minWidth: 60 }}>
         <Typography className={classes.typography}>remove</Typography>
       </ListItem>
     </List>

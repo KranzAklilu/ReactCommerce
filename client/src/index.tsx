@@ -20,6 +20,9 @@ const theme = createMuiTheme({
     background: {
       default: "#f6f6f6",
     },
+    text: {
+      primary: "#2e2e2e",
+    },
   },
   breakpoints: {
     values: {

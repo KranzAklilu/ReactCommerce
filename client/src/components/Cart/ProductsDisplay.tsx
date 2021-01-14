@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      minWidth: 300,
     },
     productsImg: {
       width: 100,

@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       padding: "0 25px",
-      border: "1px solid",
       [theme.breakpoints.up("md")]: {
         display: "flex",
       },

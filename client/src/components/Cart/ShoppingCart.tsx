@@ -22,12 +22,12 @@ const useStyles = makeStyles((theme: Theme) =>
       margin: "auto",
     },
     grid: {
+      overflowY: "hidden",
       display: "grid",
       gridTemplateColumns: "2fr repeat(3, 1fr) 0.5fr",
       alignItems: "center",
       textAlign: "center",
       padding: "10px 0",
-      border: "1px solid",
     },
     price: {},
     total: {},
@@ -43,16 +43,16 @@ const ShoppingCart = () => {
       <Paper className={classes.root}>
         <Box className={classes.grid}>
           <ProductsDisplay />
-          <Box>
+          <Box minWidth={75}>
             <Typography className={classes.price}>$56.00</Typography>
           </Box>
-          <Box>
+          <Box minWidth={150}>
             <InputAmount />
           </Box>
-          <Box>
+          <Box minWidth={75}>
             <Typography className={classes.total}>$112.00</Typography>
           </Box>
-          <Box>
+          <Box minWidth={60}>
             <IconButton
               edge="start"
               aria-label="close"

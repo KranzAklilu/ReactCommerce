@@ -20,23 +20,19 @@ export enum item4Enum {
   wishlist = "add to cart",
 }
 
-interface Props {
-  item3: string;
-  item4: string;
-}
-const CheckOut = () => {
+const CheckOut: React.FC = () => {
   const classes = useStyles();
 
   return (
     <Box className={classes.root}>
-      <Box>
-        <BillingDetails />
-        <Shipping />
-      </Box>
-      <Box>
-        <OrderReceipt />
-        <PaymentMethod />
-      </Box>
+      {/* <Box> */}
+      <BillingDetails />
+      <Shipping />
+      {/* </Box>
+      <Box> */}
+      <OrderReceipt />
+      <PaymentMethod />
+      {/* </Box> */}
     </Box>
   );
 };

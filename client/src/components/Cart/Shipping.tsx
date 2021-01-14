@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       width: "90%",
-      margin: "50px auto",
+      margin: "75px auto",
     },
     form: {
       width: "100%",
